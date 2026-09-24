@@ -1,0 +1,13 @@
+# AC Circuit Impedance Calculator
+
+import math
+
+R = float(input("Enter Resistance R (Ω): "))
+XL = float(input("Enter Inductive Reactance XL (Ω): "))
+XC = float(input("Enter Capacitive Reactance XC (Ω): "))
+
+X = XL - XC
+
+Z = math.sqrt(R**2 + X**2)
+
+print("Circuit Impedance =", Z, "Ω")
